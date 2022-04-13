@@ -65,7 +65,7 @@ namespace SuperHeroApi.Controllers
             dbHero.LastName = request.LastName;
             dbHero.Place = request.Place;
 
-            _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
             return Ok(dbHero);
         }
 
